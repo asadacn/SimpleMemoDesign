@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Alegreya|Domine|Rokkitt" rel="stylesheet">
+    <style>
+        .row{
+
+background:#09203f;
+color:white;
+font-size: 14px;
+/*font-family: 'Abel', sans-serif;*/
+font-family: 'Domine', serif;
+/*font-family: 'Rokkitt', serif;
+/*font-family: 'Alegreya', serif;*/
+height: 100%;
+        }
+hr{color: white;
+background: whitesmoke
+}
+        
+        body{
+            font-family: 'Domine', serif;
+         background: rgb(2,0,36);
+background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 7%, rgba(21,199,155,1) 49%, rgba(1,1,52,1) 96%);
+background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 7%, rgba(21,199,155,1) 49%, rgba(1,1,52,1) 96%);
+background: linear-gradient(180deg, rgba(2,0,36,1) 7%, rgba(21,199,155,1) 49%, rgba(1,1,52,1) 96%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#010134",GradientType=1);
+        }
+    </style>
+</head>
+
+<body class=" container">
+    <br>
+    <center>
+        <h1 class="h1 " style="color: rgba(21,199,155,1)">Order Form</h1>
+    </center>
+    <hr>
+    <div class="row border ">
+        <div class=" col-md-7 border p-4">
+            <form class="form-group" action="" method="post">
+                <center><u class="h3 ">Customer Information</u></center><br>
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Customer Name</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Customer Name">
+                    </div>
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Mobile Number</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Mobile Number">
+                    </div>
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Order date</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" style="font-size: 90%">Order date</div>
+                            </div>
+                            <input type="date" class="form-control form-control-sm" id="inlineFormInputGroup" placeholder="orderdate">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Delivery date</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" style="font-size: 90%">Delivery date</div>
+                            </div>
+                            <input type="date" class="form-control form-control-sm" id="inlineFormInputGroup" placeholder="deliverydate">
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="form-row ">
+                    <div class=" col-auto p-1"><input class="form-control " type="text" name="customer_name" placeholder="Customer Name">
+
+                    <div class="col-auto input-group-prepend p-1">
+                        <div class="input-group-text">Order Date</div><input class="form-control" type="date" name="order_date">
+                    </div></div>  </div>
+<div class="form-row">
+                    <div class="col-auto p-1"><input class="form-control " type="text" name="customer_name" placeholder="Contact Number">
+
+                    <div class="col-auto input-group-prepend p-1">
+                        <div class="input-group-text">Delivery Date</div><input class="form-control" type="date" name="order_date">
+                    </div></div>
+                </div>
+-->
+                <hr>
+                <center><u class="h3 ">Order List</u></center><br>
+
+                <div class="border  p-3" style="word-spacing: 2px; text-transform: capitalize">
+                    <p class="bg-light text-dark  rounded">1. abcd | 100ml | price: 76tk | qty: 2 | total: 152tk <button class="btn btn-sm btn-danger float-right">X</button></p>
+
+                    <p class="bg-light text-dark rounded">2. Apple | 1kg | price: 140tk | qty: 1 | total: 140tk <button class="btn btn-sm btn-danger float-right">X</button></p>
+
+                    <p class="bg-light text-dark rounded">3. Juice | 100ml | price:20tk | qty: 3 | total: 60tk <button class="btn btn-sm btn-danger float-right">X</button></p>
+                    <p class="bg-light text-dark rounded">4. Cake | 100ml | price: 50tk | qty: 4 | total: 200tk <button class="btn btn-sm btn-danger float-right">X</button></p>
+
+                </div><br>
+
+                <div class="input-group-prepend p-1">
+                    <div class="input-group-text">Total</div><input class="form-control form-control-sm w-25" type="text " name="order_date" placeholder="amount" value="552tk" disabled>
+
+                </div>
+                <div class="input-group-prepend  p-1">
+                    <div class="input-group-text">Advance</div><input class="form-control form-control-sm w-25" type="text " name="order_date" placeholder="300tk" value="">
+
+                </div>
+                <div class="input-group-prepend  p-1">
+                    <div class="input-group-text">Due</div><input class="form-control  w-25" type="text " name="order_date" placeholder="252tk" value="">
+
+                </div>
+
+
+            </form>
+        </div> <!--  end order lsit-->
+
+
+
+        <div class="col-md-5 border p-4">
+            <!-- search product-->
+
+            <center><u class="h3 ">Add Items</u></center><br>
+            <form class="from-group" action="" method="post">
+
+                <input class="form-control" type="text" name="search_product" placeholder="Search product">
+
+            </form><br>
+            <div class="border p-3" style="word-spacing: 2px ;text-transform: capitalize">
+
+                <p class="bg-light text-dark rounded">1. abcd | 100ml | price: 76tk | in-stock: 32 <button class="btn btn-sm btn-warning float-right">Add</button></p>
+
+                <p class="bg-light text-dark rounded">2. Apple | 1kg | price: 140tk | in-stock: 20 <button class="btn btn-sm btn-warning float-right">Add</button></p>
+
+                <p class="bg-light text-dark rounded">1. Milk | 1000ml | price: 50tk | in-stock: 12 <button class="btn btn-sm btn-warning float-right">Add</button></p>
+
+
+            </div>
+        </div>
+    </div>
+    <center class="p-3"><button class="btn btn-primary ">Place Order</button></center>
+
+</body>
+</html>
